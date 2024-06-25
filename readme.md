@@ -35,5 +35,5 @@ To run this project locally, follow these steps:
 
 ## Screenshots
 
-![Sydn's Fitness](img/Screenshot.png)
+![Sydn's Fitness](https://github.com/Sam-eer-Pradhan/My-Fitness/blob/main/img/Screenshot.PNG)
 
