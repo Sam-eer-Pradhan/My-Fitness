@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydn's Fitness</title>
+    <link rel="shortcut icon" href="img/Tab.png" type="image/png">
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/all.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap" rel="stylesheet">
+    <style>
+    /* CSS Reset */
+     *{
+        box-sizing: border-box;
+    }
+
+    body {
+        color:white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg5.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 10px;
+        left: 60px;
+
+
+    }
+
+    .left div {
+        /* font-family: 'DynaPuff', cursive; */
+        font-family: 'Baloo Bhai 2', cursive;
+
+        text-align: center;
+    }
+
+    .left img {
+        width: 120px;
+        padding: 1px;
+        filter: invert(100%)
+    }
+
+    .mid {
+        font-family: 'Fredoka One', cursive;
+        font-size: 8px;
+        display: block;
+        width: 75%;
+        margin: 30px auto;
+        top: 20px;
+        /* border: 1px solid green; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        display: inline-block;
+        /* border:1px solid blue; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 0px 27px;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(0, 0, 0);
+    }
+
+    .btn {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border:1px solid white;
+        /* text-decoration: underline; */
+        margin: 0px 5px;
+        color: white;
+        padding: 4px 14px;
+        background: transparent;
+        border-radius: 20px;
+        font-size: 15px;
+        border-color: rgb(255, 255, 255);
+        cursor: pointer;
+ }
+
+    .btn:hover {
+        background-color: rgb(2, 2, 2);
+        border-color: black;
+    }
+
+    .vertical {
+        border-left: 4px solid rgb(162,162,162);
+        height: 600px;
+        position: absolute;
+        left: 60%;
+        top: 170px;
+
+    }
+
+    .container {
+        float: right;
+        border: 1px solid black;
+        background-color: black;
+        margin: 100px 80px;
+        padding: 50px;
+        width: 30%;
+        border-radius: 20px;
+        height: 500px;
+
+    }
+
+    h1 {
+
+        font-family: TwitterChirpExtendedHeavy, Verdana, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+    }
+
+    .form-group input {
+        width: auto;
+        height: auto;
+        padding: 6px;
+        border: 1px solid grey;
+        margin: 0px;
+        border-radius: 14px;
+        background-color: black;
+        color: white;
+
+    }
+
+    .info {
+        font-size: 14px;
+        margin: 1px 0px 10px 5px;
+        color: rgb(64, 155, 236);
+    }
+
+    #email {
+        width: 86.6%;
+        margin: 10px 0px 0px 0px;
+    }
+
+    #address {
+        width: 86.6%;
+        margin: 10px 0px 10px 0px;
+
+    }
+
+    address:active {
+        border-color: rgb(22, 22, 24);
+    }
+
+    #contact {
+        width: 86.6%;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .butn {
+        position: relative;
+        top: 10px;
+        left: 150px;
+        border-radius: 4px;
+        height: 25px;
+        width: 100px;
+        padding: 3px;
+        cursor: pointer;
+    }
+
+    .butn:hover {
+        background-color: grey;
+
+    }
+    .join{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border:1px solid white;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+        position: relative;
+        top: -6px;
+        left: 54px;
+        border-radius: 10px;
+        text-align: center;
+        height: 40px;
+        width: 128px;
+        padding: 3px;
+        cursor: pointer;
+    }
+    .join:hover{
+        background-color:black;
+        border-color: black;
+    }
+
+    .horizontal1 {
+        border: 2px solid grey;
+        position: relative;
+        top: 32px;
+        width: 150px;
+
+    }
+
+    span {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 20px;
+    }
+
+    .horizontal2 {
+        border: 2px solid grey;
+        position: relative;
+        top: 10px;
+        left: 260px;
+        width: 150px;
+
+    }
+
+    .butn1 {
+        position: relative;
+        top: 40px;
+        right: 10px;;
+        border-radius: 4px;
+        height: 30px;
+        width: 180px;
+        padding: 3px;
+        border-radius: 40px;
+        cursor: pointer;
+        text-align: center;
+        padding: 5px;
+    }
+    .butn1:hover{
+        background-color: grey;
+        
+    }
+
+    .butn2 {
+        position: relative;
+        top: 40px;
+        left:50px;
+        border-radius: 4px;
+        height: 30px;
+        width: 180px;
+        padding: 3px;
+        border-radius: 40px;
+        cursor: pointer;
+        text-align: center;
+        padding: 5px;
+    }
+    .butn2:hover{
+        background-color: grey;
+    }
+    #one{
+        position: relative;
+        right: 15px;
+        
+    }
+    #two{
+        position: relative;
+        right:5px;
+    }
+    .box{
+        float: left;
+        /* border: 4px solid wheat; */
+        
+        margin: 50px 85px;
+        padding: 20px;
+        width: 50%;
+        
+        height: 510px;
+    }
+    #leftheading{
+        font-family: 'Sora', sans-serif;
+        font-size: 71px;
+    }
+    #leftinfo{
+        /* font-family: 'Sora', sans-serif; */
+        font-size: 30px;
+        padding: 30px 0px 0px 0px;
+        line-height: 70px;
+        }
+    .signin{
+        float: right;
+        position: relative;
+        top: 138px;
+        right: 82px;
+        text-align: center;
+        width: 220px;
+        margin: 2px;
+        
+    }
+    a{
+        color:rgb(64, 155, 236)
+    }
+   
+   
+</style>
+
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img//logo.png" alt="problem loading img">
+            <div>
+                Sydn Fitness
+            </div>
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">MEMBERSHIP</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">COACHES</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">
+                Call Us Now
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+    </header>
+    
+    <div></div>
+    <div class="box">
+        <h1 id="leftheading">NO PAIN NO GAIN...</h1>
+            <div id="leftinfo">
+                Having a perfect body requires a lot of training. Nice-looking body and powerful organism are interconnected - and we can help you with both.
+                <button class="join">Join Now</button>
+            </div>
+    </div>
+    <div class="vertical"></div>
+    <div class="signin">Already a customer?<a href="#"> Sign in</a></div>
+    <div class="container">
+        <h1>Register Now!</h1>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="text" name="myFirstName" id="firstname" placeholder="First Name">
+                <input type="text" name="myLastName" id="lastname" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="myEmail" id="email" placeholder="Email">
+                <div class="info">
+                    You can use letters,numbers & periods
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" name="myAddress" id="address" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="myContact" id="contact" placeholder="+91      Contact number">
+            </div>
+            <button class="butn">Submit</button>
+        </form>
+        <div class="horizontal1"></div>
+        <span>OR</span>
+        <div class="horizontal2"></div>
+        <button class="butn1"><i class="fa-brands fa-google" id="one"></i>Sign up with Google</button>
+        <button class="butn2"><i class="fa-brands fa-facebook" id="two"></i></i>Sign up with Facebook</button>
+
+    </div>
+</body>
+
+</html>
