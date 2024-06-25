@@ -35,5 +35,5 @@ To run this project locally, follow these steps:
 
 ## Screenshots
 
-![Sydn's Fitness](img/screenshot.png)
+![Sydn's Fitness](img/Screenshot.png)
 
